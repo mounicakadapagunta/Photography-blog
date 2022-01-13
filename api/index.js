@@ -24,7 +24,7 @@ app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
 //to connect the mongodb url
 mongoose
-  .connect("mongodb+srv://gautham:gautham@blog.jcckq.mongodb.net", {
+  .connect(Mongo_url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
