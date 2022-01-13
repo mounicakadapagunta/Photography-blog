@@ -7,7 +7,7 @@ const CategorySchema = new mongoose.Schema(
             required: true,
         },
     },
-    { timestamps: true } //to update the post time
+    { timestamps: true }   ///to update the post time
 );
 
 module.exports = mongoose.model('Category', CategorySchema);
